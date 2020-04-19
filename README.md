@@ -7,7 +7,9 @@
 
 For those of us constantly accessing the web, we are all too familiar with Recommender Systems. They are all around us and are either those pesky ads that are listening in on our conversations or a holy grail for new information or purchases. Love them or hate them, these recommender systems are widespread for a reason. These systems have played an integral part in the success of many large online businesses such as Amazon, Google and Spotify and are providing some of these companies up to 30% of their total revenue. 
 
-The goal of this project is to build a basic recommender model to get more familiar with aspects of Machine Learning. To test a recommender system, the popular online movie dataset from MovieLens has been employed to make movie recommendations to users based on how they rate certain movies. The users will rate these movies to "put them on the map" in terms of data, handling what is called the cold approach. The movies suggested to the users will be based on movies other users enjoyed and who rated the same movies similarly to the users being suggested to, also known as collaborative filtering. The model in this project was produced using Alternating Least Squares in PySpark.
+The goal of this project is to build a basic recommender model to get more familiar with aspects of Machine Learning. To  achieve this goal, the popular online movie dataset from MovieLens has been employed to make movie recommendations to users based on how they rate certain movies. The MovieLens dataset contains over 100,000 real world ratings for many different films and many different users. The dataset was produced by having volunteers rate movies on a scale from 1-5 based on how they enjoyed the movie.
+
+The way the model works is by having users start by rating several films to "put them on the map" in terms of data, handling what is called the cold approach. The movies suggested to the users will be based on movies that similar users enjoyed (users who rated movies similarly to those being suggested to), also known as collaborative filtering. The model in this project was produced using Alternating Least Squares in PySpark.
 
 
 # Importing and First Impressions
@@ -57,7 +59,7 @@ The model was built using ALS and the parameters were tuned using CrossValidatio
 
 To push the project further, I attempted to modernize the model by changing the ratings to a binary system to match the popular Thumbs Up or Thumbs Down that have taken over the entertainment recommender systems. Any rating given under a 3 was considered a 0, or Thumbs Down, while a 3 or above was a 1, or Thumbs Up. 
 
-![](images/BinaryRecommender.JPG)
+![](images/binary.JPG)
 
 
 # Future Work
