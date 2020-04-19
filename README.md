@@ -5,7 +5,9 @@
 
 ## Goals and Overview
 
-For those of us constantly accessing the web, we are all too familiar with Recommender Systems. They are all around us and are either those pesky ads that are listening in on our conversations or a holy grail for new information or purchases. Love them or hate them, these recommender systems are widespread for a reason. These systems have played an integral part in the success of many large online businesses such as Amazon, Google and Spotify and are providing some of these companies up to 30% of their total revenue. The goal of this project is to build a basic recommender model to get more familiar with aspects of Machine Learning. To test a recommender system, the popular online movie dataset from MovieLens will be employed to make movie recommendations to users based on how they rate certain movies. The users will rate these movies to "put them on the map" in terms of data, handling what is called the cold approach. The movies suggested to the users will be based on movies other users enjoyed and who rated the same movies similarly to the users being suggested to, also known as collaborative filtering. The model in this project was produced using Alternating Least Squares in PySpark.
+For those of us constantly accessing the web, we are all too familiar with Recommender Systems. They are all around us and are either those pesky ads that are listening in on our conversations or a holy grail for new information or purchases. Love them or hate them, these recommender systems are widespread for a reason. These systems have played an integral part in the success of many large online businesses such as Amazon, Google and Spotify and are providing some of these companies up to 30% of their total revenue. 
+
+The goal of this project is to build a basic recommender model to get more familiar with aspects of Machine Learning. To test a recommender system, the popular online movie dataset from MovieLens has been employed to make movie recommendations to users based on how they rate certain movies. The users will rate these movies to "put them on the map" in terms of data, handling what is called the cold approach. The movies suggested to the users will be based on movies other users enjoyed and who rated the same movies similarly to the users being suggested to, also known as collaborative filtering. The model in this project was produced using Alternating Least Squares in PySpark.
 
 
 # Importing and First Impressions
@@ -49,9 +51,7 @@ This question did not provide much insight as there were many movies that had pe
 
 # Building the Model using ALS
 
-The model was built using ALS and the parameters were tuned using CrossValidation.
-
-![](images/Recommender.JPG)
+The model was built using ALS and the parameters were tuned using CrossValidation. The model takes in ratings for movies and then recommends a given number of recommendations based on those ratings. For the recommended movies, the model predicts the score the user would give those movies and recommends the movies with the highest predicted ratings.
 
 # Modernizing the Model
 
